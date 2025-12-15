@@ -1,0 +1,61 @@
+{
+    "name": "pnpm-catalog-helper",
+    "type": "module",
+    "version": "0.0.0-alpha.1",
+    "packageManager": "pnpm@10.15.1",
+    "description": "pnpm catalog helper",
+    "author": "lonewolfyx <olddrivero.king@qq.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/ScaffoldCore/pnpm-catalog-helper",
+    "bugs": {
+        "url": "https://github.com/ScaffoldCore/pnpm-catalog-helper/issues"
+    },
+    "keywords": [],
+    "main": "dist/cli.mjs",
+    "module": "dist/cli.mjs",
+    "types": "dist/cli.d.mts",
+    "bin": {
+        "pp": "./bin/index.js",
+        "pnpm-catalog": "./bin/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "tsdown --watch",
+        "build": "tsdown",
+        "lint": "eslint",
+        "lint:fix": "eslint --fix"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    },
+    "dependencies": {
+        "cac": "^6.7.14",
+        "defu": "^6.1.4",
+        "find-up": "^8.0.0",
+        "glob": "^13.0.0",
+        "jiti": "^2.6.1"
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^6.7.1",
+        "@lonewolfyx/tsconfig": "^0.0.6",
+        "@types/node": "^25.0.2",
+        "eslint": "^9.39.2",
+        "eslint-plugin-yml": "^1.19.0",
+        "lint-staged": "^16.2.7",
+        "picocolors": "^1.1.1",
+        "simple-git-hooks": "^2.13.1",
+        "tsdown": "^0.17.4",
+        "tsx": "^4.21.0",
+        "typescript": "^5.9.3"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged",
+        "commit-msg": "node scripts/verify-commit.js"
+    },
+    "lint-staged": {
+        "*": "eslint --fix"
+    }
+}
