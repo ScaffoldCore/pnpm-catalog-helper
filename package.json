@@ -10,7 +10,13 @@
     "bugs": {
         "url": "https://github.com/ScaffoldCore/pnpm-catalog-helper/issues"
     },
-    "keywords": [],
+    "keywords": [
+        "pnpm-catalog-helper",
+        "save-catalog",
+        "save-catalog-name",
+        "catalog-name",
+        "catalog"
+    ],
     "main": "dist/cli.mjs",
     "module": "dist/cli.mjs",
     "types": "dist/cli.d.mts",
