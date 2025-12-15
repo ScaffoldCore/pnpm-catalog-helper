@@ -22,7 +22,7 @@
     "types": "dist/cli.d.mts",
     "bin": {
         "pp": "./bin/index.js",
-        "pnpm-catalog": "./bin/index.js"
+        "pnpm-catalog-helper": "./bin/index.js"
     },
     "files": [
         "dist"
