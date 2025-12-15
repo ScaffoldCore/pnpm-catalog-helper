@@ -32,11 +32,14 @@
         "access": "public"
     },
     "dependencies": {
+        "ansis": "^4.2.0",
         "cac": "^6.7.14",
         "defu": "^6.1.4",
         "find-up": "^8.0.0",
         "glob": "^13.0.0",
-        "jiti": "^2.6.1"
+        "jiti": "^2.6.1",
+        "tinyexec": "^1.0.2",
+        "yaml": "^2.8.2"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^6.7.1",
