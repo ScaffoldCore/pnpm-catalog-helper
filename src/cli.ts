@@ -10,11 +10,6 @@ import { name, version } from '../package.json'
 
 const cli = cac(name)
 
-cli.command('')
-    .action(() => {
-        cli.outputHelp()
-    })
-
 cli
     .command('[catalogName] [...packages]', 'Add packages to pnpm workspace catalog with specified catalog name.')
     .example('pp tools defu jiti -D')
