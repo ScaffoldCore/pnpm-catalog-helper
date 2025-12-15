@@ -16,8 +16,8 @@ cli.command('')
     })
 
 cli
-    .command('[catalogName] [...packages]', 'Add packages to a specific pnpm Catalog.')
-    .example('pp tools jiti')
+    .command('[catalogName] [...packages]', 'Add packages to pnpm workspace catalog with specified catalog name.')
+    .example('pp tools defu jiti -D')
     .allowUnknownOptions()
     .action(async (catalogName: string, packages: string[]) => {
         const config = {
